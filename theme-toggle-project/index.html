@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Theme Toggle Playground</title>
+    </head>
+    <body>
+        <div class="box">
+            <div>
+                <!-- first approach -->
+                <p><b>first approach:</b> Using the onclick attribute to call a function</p>
+                <button onclick="changeTheme(this.id)" id="blue-button">Blue</button>
+                <button onclick="changeTheme(this.id)" id="green-button">Green</button>
+                <button onclick="changeTheme(this.id)" id="yellow-button">Yellow</button>
+                <button onclick="changeTheme(this.id)" id="black-button">Black</button>
+                <button onclick="changeTheme(this.id)" id="white-button">White</button>
+            </div>
+            <!-- second approach -->
+            <div>
+                <p><b>second approach:</b> Improvement to first approach</p>
+                <button onclick="toggleTheme(this)" id="blue-btn">Blue</button>
+                <button onclick="toggleTheme(this)" id="green-btn">Green</button>
+                <button onclick="toggleTheme(this)" id="yellow-btn">Yellow</button>
+                <button onclick="toggleTheme(this)" id="black-btn">Black</button>
+                <button onclick="toggleTheme(this)" id="white-btn">White</button>
+            </div>
+
+            <!-- final approach -->
+            <div>
+                <p><b>final approach:</b> Using the event listener</p>
+                <button class="btns" id="blue">Blue</button>
+                <button class="btns" id="green">Green</button>
+                <button class="btns" id="yellow">Yellow</button>
+                <button class="btns" id="black">Black</button>
+                <button class="btns" id="white">White</button>
+            </div>
+
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
