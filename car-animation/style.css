@@ -1,0 +1,160 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 3fr 1fr;
+    
+}
+.parking-lot{
+    height: 50%;
+    width: 50%;
+    border: 1px black groove;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.089);
+}
+.car{
+    width: 50%;
+    height: 50%;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: move 7s infinite alternate-reverse;
+    /* rotate: 30deg; */
+
+
+
+}
+.car-body{
+    border: 1px black groove;
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    border-radius: 15px;
+
+}
+.car-top{
+    border: 1px black groove;
+    background-color: rgba(128, 0, 128, 0.171);
+    border-radius: 5px;
+    width: 40%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    /* grid-template-columns: 50% 50%; */
+    /* grid-template-columns: 70px 70px; */
+    grid-template-columns: 1fr 1fr;
+}
+.left-window{
+    border: 1px black groove;
+    border-radius: 5px;
+    height: 70%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.342);
+
+}
+.right-window{
+    border: 1px black groove;
+    border-radius: 5px;
+    height: 70%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.car-bottom{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-tyre{
+    border: 1px black groove;
+    background-color: black;
+    height: 100%;
+    width: 30%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+
+    
+}
+.right-tyre{
+    border: 1px black groove;
+    height: 100%;
+    width: 30%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: black;
+}
+.tyre-wheel{
+    border: 1px black groove;
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: gray;
+}
+.road{
+    background-color: black;
+    height: 10%;
+    width: 100%;
+}
+.police-officer{
+    /* background-color: black; */
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    background-color: pink;
+    width: 100%;
+    height: 10%;
+    border-radius: 50%;
+}
+.body{
+    /* background-color: purple; */
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.chest{
+    background-color: red;
+}
+.left-arm{
+    background-color: black;
+    height: 90%;
+    rotate: 20deg;
+}
+.right-arm{
+    background-color: black;
+    height: 100%;
+    rotate: -20deg;
+}
+.bottom{
+    height:yellow;
+    height: 40%;
+    width: 100%;
+}
+@keyframes move {
+    from{
+        transform: translate(-150px);
+    }
+    to{
+        transform: translate(500px);
+    }
+}
