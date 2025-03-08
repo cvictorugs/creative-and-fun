@@ -1,4 +1,4 @@
-// first approach
+// case 1
 function changeTheme(btnId){
     if(btnId === 'blue-button'){
         document.querySelector('body').style.backgroundColor = 'blue';
@@ -13,7 +13,7 @@ function changeTheme(btnId){
     }
 }
 
-// second approach
+// case 2
 function toggleTheme(btn){
     document.querySelector('body').style.backgroundColor = btn.textContent;
     const pElements = document.querySelectorAll('p');
@@ -24,7 +24,7 @@ function toggleTheme(btn){
     })
 }
 
-// third approach
+// case 3 (final approach)
 const buttonElements = document.querySelectorAll('.btns');
 const pElements = document.querySelectorAll('p');
 buttonElements.forEach((button) => {
